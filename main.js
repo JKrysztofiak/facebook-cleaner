@@ -3,6 +3,7 @@ function removeDistractions() {
 	const stories = document.querySelector('[data-pagelet=Stories]');
 	const rooms = document.querySelector('[data-pagelet=VideoChatHomeUnit]');
 	const watch = document.querySelector('[aria-label=Watch]');
+	const rightPanel = document.querySelector('[data-pagelet=RightRail]');
 
 	if (feed == null) {
 		return;
@@ -16,6 +17,7 @@ function removeDistractions() {
 	stories.style.display = 'none';
 	rooms.style.display = 'none';
 	watch.parentElement.parentElement.parentElement.style.display = 'none';
+	rightPanel.style.display = 'none';
 
 	setTimeout(() => {
 		feed.parentElement.insertBefore(msg, feed);
