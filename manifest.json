@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "Facebook Cleaner",
+	"version": "0.1.0",
+	"description": "Block facebook newsfeed and annoying notifications",
+	"content_scripts": [
+		{
+			"js": [ "main.js" ],
+			"css": [ "style.css" ],
+			"matches": [ "https://www.facebook.com//*" ]
+		}
+	]
+}
